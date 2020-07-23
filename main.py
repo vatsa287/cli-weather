@@ -1,10 +1,7 @@
 import argparse
 parser = argparse.ArgumentParser()
 
-
-parser.add_argument("number", type=int, help="Enter number")
-
-parser.add_argument("-c", "--cube")
+parser.add_argument("city", type=int, help="Enter the city to get weather updates")
 
 args = parser.parse_args()
 
