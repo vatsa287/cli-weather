@@ -1,4 +1,3 @@
-
 import argparse
 from get_by_city import get_by_city_args, city_parse
 
