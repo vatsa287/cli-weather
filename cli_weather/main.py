@@ -1,5 +1,5 @@
 import argparse
-from get_by_city import get_by_city_args,city_parse
+from get_by_city import get_by_city_args, city_parse
 
 def main():
     parser = argparse.ArgumentParser('cli-weather')
