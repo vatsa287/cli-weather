@@ -55,12 +55,14 @@ def city_parse(args):
     # defalut metric values
     degree = "celcius"
     speed = "m/s"
+    distance = "mm"
 
     if args.units == "S":
         degree = "kelvin"
     elif args.units == "F":
         degree = "Fahrenheit"
         speed = "mph"
+        distance = "in"
 
     if args.detailed:
         print(
@@ -81,6 +83,7 @@ def city_parse(args):
             "wind direction: {} degrees\n".format(data[0]['wind_dir']),
             "visibility: {} KM\n".format(data[0]['vis']),
             "relative humidity: {} %\n".format(data[0]['rh']),
+            "snowfall: {} {}/hr\n".format(data[0]['snow'],distance),
             "estimated solar radiation: {} W/m^2".format(data[0]['solar_rad'])
         )
     elif args.detailed is False:
