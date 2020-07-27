@@ -16,7 +16,7 @@ def get_by_postalcode_args(subparsers):
     )
     postalcode_parser.add_argument(
         "-u", "--units",
-        help="M - [DEFAULT] Metric (Celcius, m/s, mm)\n\S - Scientific (Kelvin, m/s, mm)\nI - Fahrenheit (F, mph, in)",
+        help="M - [DEFAULT] Metric (Celcius, m/s, mm)\nS - Scientific (Kelvin, m/s, mm)\nI - Fahrenheit (F, mph, in)",
         default="M"
     )
     postalcode_parser.add_argument(
