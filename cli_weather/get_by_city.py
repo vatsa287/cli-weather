@@ -18,7 +18,7 @@ def get_by_city_args(subparsers):
     )
     city_parser.add_argument(
         "-d","--detailed",
-        help="detailed weather data",
+        help="displays detailed weather data",
         action="store_true"
     )
 
@@ -47,7 +47,7 @@ def city_parse(args):
     # ValueError-unable to decode json, UnboundLocalError-used var before declaring
     except (ValueError,UnboundLocalError) as err:
         print("Invalid city")
-        print("Please use format ex: $ cli-weather city_name [-c country_name][-u S/M/F] [-d]")
+        print("Please use format ex: $ cli-weather bengaluru [-c country_name][-u S/M/F][-d]")
         return
 
     data = main_data['data']

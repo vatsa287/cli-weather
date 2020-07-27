@@ -21,7 +21,7 @@ def get_by_postalcode_args(subparsers):
     )
     postalcode_parser.add_argument(
         "-d","--detailed",
-        help="detailed weather data",
+        help="displays sdetailed weather data",
         action="store_true"
     )
 
@@ -50,7 +50,7 @@ def postalcode_parse(args):
     # ValueError-unable to decode json, UnboundLocalError-used var before declaring
     except (ValueError,UnboundLocalError) as err:
         print("Invalid postal-code")
-        print("Please use format ex: $ cli-weather postal-code 560032 [-c country_name][-u S/M/F] [-d]")
+        print("Please use format ex: $ cli-weather postal-code 560032 [-c country_name][-u S/M/F][-d]")
         return
 
     data = main_data['data']
