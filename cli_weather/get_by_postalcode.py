@@ -7,11 +7,11 @@ def get_by_postalcode_args(subparsers):
     )
     postalcode_parser.add_argument(
         "postalcode",
-        help="enter postal code to get current temparature"
+        help="get weather by postal code"
     )
     postalcode_parser.add_argument(
         "-c", "--country",
-        help="country of given postal code",
+        help="country of entered area",
         default=""
     )
     postalcode_parser.add_argument(
@@ -21,7 +21,7 @@ def get_by_postalcode_args(subparsers):
     )
     postalcode_parser.add_argument(
         "-d","--detailed",
-        help="displays sdetailed weather data",
+        help="display sdetailed weather data",
         action="store_true"
     )
 
@@ -68,27 +68,25 @@ def postalcode_parse(args):
         distance = "in"
 
     if args.detailed:
-        print(
-            " Have a nice day!\n\n",
-            "city: {}\n".format(data[0]['city_name'].capitalize()),
-            "temparature: {} {}\n".format(data[0]['temp'],degree),
-            "summary: {}\n".format(weather['description']),
-            "source station ID: {}\n".format(data[0]['station']),
-            "latitude: {} degrees\n".format(data[0]['lat']),
-            "longitude: {} degrees\n".format(data[0]['lon']),
-            "timezone: {}\n".format(data[0]['timezone']),
-            "last observation time: {}\n".format(data[0]['ob_time']),
-            "sunrise: {}\n".format(data[0]['sunrise']),
-            "sunset: {}\n".format(data[0]['sunset']),
-            "pressure: {} mb\n".format(data[0]['pres']),
-            "sea level pressure: {} mb\n".format(data[0]['slp']),
-            "wind speed: {} {}\n".format(data[0]['wind_spd'],speed),
-            "wind direction: {} degrees\n".format(data[0]['wind_dir']),
-            "visibility: {} KM\n".format(data[0]['vis']),
-            "relative humidity: {} %\n".format(data[0]['rh']),
-            "snowfall: {} {}/hr\n".format(data[0]['snow'],distance),
-            "estimated solar radiation: {} W/m^2".format(data[0]['solar_rad'])
-        )
+        print("Have a nice day!\n")
+        print("city                     : {}".format(data[0]['city_name'].capitalize()))
+        print("temparature              : {} {}".format(data[0]['temp'],degree))
+        print("summary                  : {}".format(weather['description']))
+        print("source station ID        : {}".format(data[0]['station']))
+        print("latitude                 : {} degrees".format(data[0]['lat']))
+        print("longitude                : {} degrees".format(data[0]['lon']))
+        print("timezone                 : {}".format(data[0]['timezone']))
+        print("last observation time    : {}".format(data[0]['ob_time']))
+        print("sunrise                  : {}".format(data[0]['sunrise']))
+        print("sunset                   : {}".format(data[0]['sunset']))
+        print("pressure                 : {} mb".format(data[0]['pres']))
+        print("sea level pressure       : {} mb".format(data[0]['slp']))
+        print("wind speed               : {} {}".format(data[0]['wind_spd'],speed))
+        print("wind direction           : {} degrees".format(data[0]['wind_dir']))
+        print("visibility               : {} KM".format(data[0]['vis']))
+        print("relative humidity        : {} %".format(data[0]['rh']))
+        print("snowfall                 : {} {}/hr".format(data[0]['snow'],distance))
+        print("estimated solar radiation: {} W/m^2".format(data[0]['solar_rad']))
     elif args.detailed is False:
         print("Current temparature in {} is {} {}" .format(data[0]['city_name'].capitalize(), data[0]['temp'], degree))
     
