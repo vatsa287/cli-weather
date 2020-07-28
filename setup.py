@@ -1,10 +1,10 @@
 from setuptools import setup
 
-long_description = open('PyPIDocumentation.md').read()
+long_description = open('/home/vatsa/cli-weather/PyPIDocumentation.md').read()
 
 setup(
     name='cli-weather',
-    version='0.1.0',    
+    version='0.1.1',    
     description='Lightweight command line app to get fast weather data right on the command line',
     long_description_content_type='text/markdown',
     long_description=long_description,
