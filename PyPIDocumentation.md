@@ -56,6 +56,12 @@ $ python main.py [command] [options]
 
 GNU General Public License v3.0
 
+**ver 0.1.1**  
+
+3 - Alpha Test Release
+- Minor bug fixes in setup.py
+- Doc update in PyPIDocumentation.md
+
 **ver 0.1.0**  
 
 3 - Alpha Test Release
