@@ -1,7 +1,10 @@
 import requests
+import argparse
 
 def get_by_city_args(subparsers):
-    city_parser = subparsers.add_parser('city')
+    city_parser = subparsers.add_parser('city',
+    formatter_class=argparse.RawTextHelpFormatter
+    )
     city_parser.add_argument(
         "city",
         help="enter city name to get current temparature"
@@ -13,7 +16,7 @@ def get_by_city_args(subparsers):
     )
     city_parser.add_argument(
         "-u", "--units",
-        help="M - [DEFAULT] Metric (Celcius, m/s, mm), S - Scientific (Kelvin, m/s, mm),I - Fahrenheit (F, mph, in)",
+        help="M - [DEFAULT] Metric (Celcius, m/s, mm)\nS - Scientific (Kelvin, m/s, mm)\nI - Fahrenheit (F, mph, in)",
         default="M"
     )
     city_parser.add_argument(
