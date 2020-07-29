@@ -60,7 +60,7 @@ GNU General Public License v3.0
 
 3 - Alpha Test Release
 - Python2 and Python3 compatible
-- Introductio of wheel distribution in binary
+- Introduction of wheel distribution in binary
 - Minor bug fixes in setup.py
  
 
