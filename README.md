@@ -47,7 +47,7 @@ cli-weather command [-h] [-c COUNTRY] [-u UNITS] [-d] city_name/postal_code
 Fork this repository
 $ git clone "https://github.com/username/cli-weather"
 $ cd cli_weather
-$ pip install -r requirements.txt
+$ pip install requests
 $ python main.py [command] [options]
 
 ```
@@ -55,6 +55,14 @@ $ python main.py [command] [options]
 ## License
 
 GNU General Public License v3.0
+
+**ver 0.1.2**
+
+3 - Alpha Test Release
+- Python2 and Python3 compatible
+- Introductio of wheel distribution in binary
+- Minor bug fixes in setup.py
+ 
 
 **ver 0.1.1**  
 
@@ -68,4 +76,4 @@ GNU General Public License v3.0
 - Get weather by city
 - Get weather by postalcode
 - Change units according as you wish [Metric/Scientific/Farenheit]
-- Only temparature by default, detailed information from snowfall to solar radiation
+- Only temparature by default, detailed information from snowfall to solar radiation using -d

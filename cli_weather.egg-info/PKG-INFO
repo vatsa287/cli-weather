@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cli-weather
-Version: 0.1.1
+Version: 0.1.2
 Summary: Lightweight command line app to get fast weather data right on the command line
 Home-page: https://github.com/vatsa287/cli-weather
 Author: Shree Vatsa N
@@ -55,7 +55,7 @@ Description: # cli-weather
         Fork this repository
         $ git clone "https://github.com/username/cli-weather"
         $ cd cli_weather
-        $ pip install -r requirements.txt
+        $ pip install requests
         $ python main.py [command] [options]
         
         ```
@@ -63,6 +63,14 @@ Description: # cli-weather
         ## License
         
         GNU General Public License v3.0
+        
+        **ver 0.1.2**
+        
+        3 - Alpha Test Release
+        - Python2 and Python3 compatible
+        - Introductio of wheel distribution in binary
+        - Minor bug fixes in setup.py
+         
         
         **ver 0.1.1**  
         
@@ -76,7 +84,7 @@ Description: # cli-weather
         - Get weather by city
         - Get weather by postalcode
         - Change units according as you wish [Metric/Scientific/Farenheit]
-        - Only temparature by default, detailed information from snowfall to solar radiation
+        - Only temparature by default, detailed information from snowfall to solar radiation using -d
 Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Topic :: Utilities

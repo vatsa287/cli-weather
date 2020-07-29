@@ -1,13 +1,14 @@
 from setuptools import setup
 
-long_description = open('/home/vatsa/cli-weather/PyPIDocumentation.md').read()
+with open('README.md') as f:
+    long_description = f.read()
 
 setup(
     name='cli-weather',
-    version='0.1.1',    
+    version='0.1.2',    
     description='Lightweight command line app to get fast weather data right on the command line',
-    long_description_content_type='text/markdown',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/vatsa287/cli-weather',
     author='Shree Vatsa N',
     author_email='i.mnshreevatsa@gmail.com',
