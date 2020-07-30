@@ -57,7 +57,7 @@ $ python main.py [command] [options]
 
 GNU General Public License v3.0
 
-**ver 0.1.2**
+**ver 0.1.3**
 
 3 - Alpha Test Release
 - Current Air quality observations for any point in the world.Returns current information on the six major pollutants - PM 2.5, PM 10, CO, SO2, NO2, and O3 as well as an US EPA AirQuality Index (AQI) score.
