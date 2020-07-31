@@ -18,7 +18,7 @@ pip install cli-weather
 ## Usage
 
 ```
-cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] city_name/postal_code
+cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] [-f] city_name/postal_code
 ```
 
 |Command         | Description                   |
@@ -29,6 +29,7 @@ cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] city_name/postal_code
 |Option          | Description                   |
 |----------------|-------------------------------|
 |-a, --airquality| Display current air quality   |
+|-f, --forecast  | Forecast on weather/airquality|
 |-c, --country   | Country of entered area       |
 |-u, --units     | Metric, Scientific, Farenheit |
 |-d, --detailed  | Display detailed weather data |
@@ -56,6 +57,13 @@ $ python main.py [command] [options]
 ## License
 
 GNU General Public License v3.0
+
+**ver 0.1.4**
+
+3 - Alpha Test Release
+- Introduced new optional argument -f, --forecast which gives 7 day weather forecast [for now will extend to airquality forecast by next release] with daily intervals from any point on the planet. The result can be fetched by either the city name or postalcode.
+- Forecast data from the world's most accurate weather models including the GFS 13km, ECMWF, DWD 6.5km ICON-Europe, and NOAA 3km HRRR.
+- Code reuse made for both city and postalcode by dividing functions in each class to new modules altogether.
 
 **ver 0.1.3**
 
