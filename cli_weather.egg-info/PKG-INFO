@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cli-weather
-Version: 0.1.3
+Version: 0.1.4
 Summary: Lightweight command line app to get fast weather data right on the command line
 Home-page: https://github.com/vatsa287/cli-weather
 Author: Shree Vatsa N
@@ -26,7 +26,7 @@ Description: # cli-weather
         ## Usage
         
         ```
-        cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] city_name/postal_code
+        cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] [-f] city_name/postal_code
         ```
         
         |Command         | Description                   |
@@ -37,6 +37,7 @@ Description: # cli-weather
         |Option          | Description                   |
         |----------------|-------------------------------|
         |-a, --airquality| Display current air quality   |
+        |-f, --forecast  | Forecast on weather/airquality|
         |-c, --country   | Country of entered area       |
         |-u, --units     | Metric, Scientific, Farenheit |
         |-d, --detailed  | Display detailed weather data |
@@ -65,7 +66,14 @@ Description: # cli-weather
         
         GNU General Public License v3.0
         
-        **ver 0.1.2**
+        **ver 0.1.4**
+        
+        3 - Alpha Test Release
+        - Introduced new optional argument -f, --forecast which gives 7 day weather forecast [for now will extend to airquality forecast by next release] with daily intervals from any point on the planet. The result can be fetched by either the city name or postalcode.
+        - Forecast data from the world's most accurate weather models including the GFS 13km, ECMWF, DWD 6.5km ICON-Europe, and NOAA 3km HRRR.
+        - Code reuse made for both city and postalcode by dividing functions in each class to new modules altogether.
+        
+        **ver 0.1.3**
         
         3 - Alpha Test Release
         - Current Air quality observations for any point in the world.Returns current information on the six major pollutants - PM 2.5, PM 10, CO, SO2, NO2, and O3 as well as an US EPA AirQuality Index (AQI) score.
