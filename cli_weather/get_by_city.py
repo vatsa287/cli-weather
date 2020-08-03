@@ -2,14 +2,17 @@ from __future__ import print_function
 import requests
 import argparse
 
+# handle ModuleNotFoundError python3 execution
 try:
     from cli_weather.airquality_data import *
     from cli_weather.weather_data import *
     from cli_weather.weather_forecast_data import *
+    from cli_weather.airquality_forecast_data import *
 except ModuleNotFoundError:
     from airquality_data import *
     from weather_data import *
     from weather_forecast_data import *
+    from airquality_forecast_data import *
 
 def get_by_city_args(subparsers):
     city_parser = subparsers.add_parser('city',
@@ -42,7 +45,7 @@ def get_by_city_args(subparsers):
     city_parser.add_argument(
         "-u", "--units",
         choices=['M','S','F'],
-        help="M - [DEFAULT] Metric (Celcius, m/s, mm)\nS - Scientific (Kelvin, m/s, mm)\nI - Fahrenheit (F, mph, in)",
+        help="M - Metric (Celcius, m/s, mm) [DEFAULT]\nS - Scientific (Kelvin, m/s, mm)\nI - Fahrenheit (F, mph, in)",
         default="M"
     )
 
@@ -54,7 +57,7 @@ def city_parse(args):
     API_KEY = "2a7db0585e7541018229c17efb2efa94"
 
 
-    if args.airquality is True:
+    if args.airquality is True and args.forecast is False:
         if args.country == "":
             API_URL = "https://api.weatherbit.io/v2.0/current/airquality?city="+city+"&key="
         else:
@@ -65,6 +68,12 @@ def city_parse(args):
             API_URL = "https://api.weatherbit.io/v2.0/forecast/daily?city="+city+"&key="
         else:
             API_URL = "https://api.weatherbit.io/v2.0/forecast/daily?city="+city+country+"&key="
+
+    elif args.airquality is True and args.forecast is True:
+         if args.country == "":
+            API_URL = "https://api.weatherbit.io/v2.0/forecast/airquality?city="+city+"&key="
+         else:
+            API_URL = "https://api.weatherbit.io/v2.0/forecast/airquality?city="+city+country+"&key="
 
     elif args.airquality is False:
         if args.country == "":
@@ -106,8 +115,7 @@ def city_parse(args):
         get_weather_forecast(main_data, degree, speed, distance)
         return
     elif args.airquality is True and args.detailed in choice and args.forecast is True:
-        # TODO: call airquality forecast function
-        pass
+        get_airquality_forecast(main_data)
         return
 
     # call arguments based on selected combination of optional arguments
@@ -122,4 +130,3 @@ def city_parse(args):
 
     elif args.detailed is True and args.airquality is True:
         get_detailed_airquality(main_data)
-
