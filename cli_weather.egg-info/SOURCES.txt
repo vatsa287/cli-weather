@@ -2,6 +2,7 @@ README.md
 setup.py
 cli_weather/__init__.py
 cli_weather/airquality_data.py
+cli_weather/airquality_forecast_data.py
 cli_weather/get_by_city.py
 cli_weather/get_by_postalcode.py
 cli_weather/main.py

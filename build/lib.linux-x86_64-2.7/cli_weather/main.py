@@ -10,7 +10,23 @@ except ModuleNotFoundError:
     from get_by_postalcode import get_by_postalcode_args, postalcode_parse
 
 def main():
-    parser = argparse.ArgumentParser('cli-weather')
+    parser = argparse.ArgumentParser('cli-weather',
+        formatter_class=argparse.RawTextHelpFormatter,
+        add_help=False
+    )
+    # package version
+    parser.add_argument(
+        "--version",
+        action="version",
+        version='%(prog)s 0.1.5'
+    )
+    # description of project, supress default help
+    parser.add_argument(
+        "-h","--help",
+        help="Lightweight command line app to get fast weather data, \nright on the command line.\nAuthor : Shree Vatsa N\nEmail  : i.mnshreevatsa@gmail.com",
+        action="help"
+    )
+
 
     # dest - name of the attribute under which sub-command name will be stored, defalut=None
     subparsers = parser.add_subparsers(dest="city_or_postalcode")
