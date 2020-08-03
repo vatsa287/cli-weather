@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='cli-weather',
-    version='0.1.4',
+    version='0.1.5',
     description='Lightweight command line app to get fast weather data right on the command line',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -21,7 +21,7 @@ setup(
         ]
     },
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Topic :: Utilities",
         "Intended Audience :: Developers",
         "Environment :: Console",
