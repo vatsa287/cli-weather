@@ -19,7 +19,7 @@ def get_weather_forecast(main_data, degree, speed, distance):
     days = 7
     data = main_data['data']
 
-    print("Forecast for next 7 days. Have a nice week!\n")
+    print("Weather forecast for next 7 days. Have a nice week!\n")
 
     print("-----------------------------------------------------\n")
 
