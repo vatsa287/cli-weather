@@ -115,49 +115,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
 
 + ## Gallery of Examples
 
-  - Get current weather. Displays current temprature
-  ```
-  $ cli-weather city bengaluru
-  ```
-
-  - Get detailed current weather. Displays wide of range of weather data from snowfall to solar radiation (--detailed or -d)
-  ```
-  $ cli-weather city bengaluru -d
-  ```
-
-  - Get weather forecast for next 7 days with 24 hour interval (--forecast or -f)
-  ```
-  $ cli-weather city bengaluru -f
-  ```
-
-  - Get current air quality. Displays current Air Quality Index and its associated category (--airquality or -a)
-  ```
-  $ cli-weather city bengaluru -a
-  ```
-
-  - Get detailed current air quality. Displays concentration of various polloutants and health risk status (--detailed --airquality or -d -a)
-  ```
-  $ cli-weather city bengaluru -da
-  ```
-
-  - Get airquality forecast for next 3 days with 12 hour interval (--airquality --forecast or -a -f)
-  ```
-  $ cli-weather city bengaluru -af
-  ```
-
-- cli-weather supports three diffrent units namely Metric(default), Scientific and Farenheit) which can be specified using --units or -u)
-```
-$ cli-weather city singapore -u F
-```
-> Displays the temprature in Farenheit
-
-|Units           | Extensions                    |
-|----------------|-------------------------------|
-|M               | Celcius, m/s, mm              |
-|S               | Kelvin, m/s, mm               |
-|F               | F, mph, in                    |
-
-> Note: In order to have postalcode as a mode of of input replace city with postalcode and enter known postalcode.
+  Check [manual](https://github.com/vatsa287/cli-weather/blob/master/manual.md) for comprehensive demo of all possible options with examples.
 
 --- 
 
