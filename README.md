@@ -45,27 +45,27 @@ $ cli-weather city bengaluru
 
 - Get detailed current weather. Displays wide of range of weather data from snowfall to solar radiation (--detailed or -d)
 ```
-$ cli-weather city delhi -d
+$ cli-weather city bengaluru -d
 ```
 
 - Get weather forecast for next 7 days with 24 hour interval (--forecast or -f)
 ```
-$ cli-weather city mumbai -f
+$ cli-weather city bengaluru -f
 ```
 
 - Get current air quality. Displays current Air Quality Index and its associated category (--airquality or -a)
 ```
-$ cli-weather city kolkata -a
+$ cli-weather city bengaluru -a
 ```
 
 - Get detailed current air quality. Displays concentration of various polloutants and health risk status (--detailed --airquality or -d -a)
 ```
-$ cli-weather city sydney -da
+$ cli-weather city bengaluru -da
 ```
 
 - Get airquality forecast for next 3 days with 12 hour interval (--airquality --forecast or -a -f)
 ```
-$ cli-weather city paris -af
+$ cli-weather city bengaluru -af
 ```
 
 - cli-weather supports three diffrent units namely Metric(default), Scientific and Farenheit) which can be specified using --units or -u)
@@ -171,7 +171,7 @@ $ python main.py [command] [options]
 <hr>
 
 
-## Support the project
+## Support the project :sparkling_heart:
 
 I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously,
 this takes time. You can use this service for free.
@@ -187,9 +187,10 @@ src="https://cdn.buymeacoffee.com/buttons/default-orange.png"
 alt="Buy Me A Coffee" width="150" height="30" >
 </a>
 
-Thanks!
+Thanks! :heart:
 
 ---
 
-Contributions are welcomed!
+Contributions are welcomed! <3
 
+Made with :heart: and Python.
