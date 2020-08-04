@@ -29,14 +29,14 @@
 
 ## Introduction
 
-**cli-weather** is a command line app to get instant real-time weather data by city name or postalcode from any corner on earth right on the command line.
+> **cli-weather** is a command line app to get instant real-time weather data by city name or postalcode from any corner on earth right on the command line.
 Written in python and powered by **WeatherBIT API**, cli-weather also provides detailed weather data, air-quality data and forecasts for next 7 days with 24 hour intervals for weather and 3 days forecast with 12 hour intervals for air-quality.
 
-With *cli-weather app* you can retrieve current weather observations from over **45,000** live weather stations using WeatherBIT API, and highly localized weather forecasts for any point on the globe using the world's most trusted weather models such as GFS 13km, ECMWF, DWD 6.5km ICON-Europe, and NOAA 3km HRRR.!
+> With *cli-weather app* you can retrieve current weather observations from over **45,000** live weather stations using WeatherBIT API, and highly localized weather forecasts for any point on the globe using the world's most trusted weather models such as GFS 13km, ECMWF, DWD 6.5km ICON-Europe, and NOAA 3km HRRR.!
 
-You can look up weather data by many methods including:
-- By entering city_name
-- By entering postal_code
+> You can look up weather data by many methods including:
+> - By entering city_name
+> - By entering postal_code
 
 ## Installation
 
