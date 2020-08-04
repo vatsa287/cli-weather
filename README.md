@@ -12,11 +12,14 @@
 - [Introduction](#introduction)
 - [Installation](#installation)
   - [Local Installation](#try-without-using-pip)  <!-- [Features at a Glance](#features-at-a-glance) -->
-- [Usage](#usage)
+- [Baic Usage](#usage)
 - [Examples](#examples)
 - [Data Sources](#data-sources)
 - [Dependencies](#dependencies)
 - [Version History](#version-history)
+- [How to Contribute](#how-to-contribute)
+  - [Bug Reports & Feature Requests](#bug-reports-&-feature-requests)
+  - [Developing](#developing)
 - [License](#license)
 - [Reaching Out](#reaching-out)
 - [Support The Project :sparkling_heart:](#support-the-project-sparkling_heart)
@@ -46,19 +49,17 @@ You can look up weather data by many methods including:
 
 ### Try without using pip
 
-```
-Fork this repository
+```bash
 $ git clone "https://github.com/username/cli-weather"
 $ cd cli_weather
 $ pip install requests
 $ python main.py [command] [options]
-
 ```
 
-## Usage
+## Basic Usage
 
 ```bash
-$ cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] [-f] city_name/postal_code
+$ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/postal_code
 ```
 
 |Command         | Description                   |
@@ -123,16 +124,18 @@ $ cli-weather city singapore -u F
 
 ## Data sources
 
+> API : cli-weather is powered by WeatherBIT API
+
 * [weatherbit.io](https://weatherbit.io/)
 
 ## Dependencies
 
-* [requests](http://docs.python-requests.org/en/latest/) >= 2.4
+* cli-weather requires [requests](http://docs.python-requests.org/en/latest/) >= 2.4 to run.
 
 
 ## Version History
 
-**ver 0.1.5**
+![PyPI](https://img.shields.io/pypi/v/cli-weather?color=blue&label=PyPI&logo=python&logoColor=yellow&style=plastic)
 
 4 - Beta Limited Use Release
 - Introduced new feature to support airquality forecast for next 3 days with 12 hours intervals when used in conjunction with -a and -f which stands for --airquality and --forecast respectively.
@@ -140,14 +143,14 @@ $ cli-weather city singapore -u F
 - Introduced --version and --about to provide the version of PyPI package and description of the project.
 - Almost production ready, if General API is upgraded since it does not server more than 1 simultaneous HTTPS response.
 
-**ver 0.1.4**
+![PyPI](https://img.shields.io/badge/PyPI-v0.1.4-blue?style=plastic&logo=python&logoColor=yellow)
 
 3 - Alpha Test Release
 - Introduced new optional argument -f, --forecast which gives 7 day weather forecast [for now will extend to airquality forecast by next release] with daily intervals from any point on the planet. The result can be fetched by either the city name or postalcode.
 - Forecast data from the world's most accurate weather models including the GFS 13km, ECMWF, DWD 6.5km ICON-Europe, and NOAA 3km HRRR.
 - Code reuse made for both city and postalcode by dividing functions in each class to new modules altogether.
 
-**ver 0.1.3**
+![PyPI](https://img.shields.io/badge/PyPI-v0.1.3-blue?style=plastic&logo=python&logoColor=yellow)
 
 3 - Alpha Test Release
 - Current Air quality observations for any point in the world.Returns current information on the six major pollutants - PM 2.5, PM 10, CO, SO2, NO2, and O3 as well as an US EPA AirQuality Index (AQI) score.
@@ -157,20 +160,20 @@ $ cli-weather city singapore -u F
 - Change in description of --detailed optional argument to accomodate new -a functionality
 - Choose a subparser status during empty positional argument scenario
 
-**ver 0.1.2**
+![PyPI](https://img.shields.io/badge/PyPI-v0.1.2-blue?style=plastic&logo=python&logoColor=yellow)
 
 3 - Alpha Test Release
 - Python2 and Python3 compatible
 - Introduction of wheel distribution in binary
 - Minor bug fixes in setup.py
 
-**ver 0.1.1**
+![PyPI](https://img.shields.io/badge/PyPI-v0.1.1-blue?style=plastic&logo=python&logoColor=yellow)
 
 3 - Alpha Test Release
 - Minor bug fixes in setup.py
 - Doc update in PyPIDocumentation.md
 
-**ver 0.1.0**
+![PyPI](https://img.shields.io/badge/PyPI-v0.1.0-blue?style=plastic&logo=python&logoColor=yellow)
 
 3 - Alpha Test Release
 - Get weather by city
@@ -178,12 +181,34 @@ $ cli-weather city singapore -u F
 - Change units according as you wish [Metric/Scientific/Farenheit]
 - Only temparature by default, detailed information from snowfall to solar radiation using -d
 
+## How to Contribute
+
+#### Bug Reports & Feature Requests
+
+Please use the [issue tracker](https://github.com/vatsa287/cli-weather/issues) to report any bugs or file feature requests.
+
+#### Developing
+
+PRs are welcome. To begin developing, do this:
+
+1. Clone repo and create a new branch: `$ git checkout https://github.com/alichtman/stronghold -b name_for_new_branch`.
+
+```bash
+$ git clone "https://github.com/vatsa287/cli-weather"
+$ git checkout -b name_for_new_branch
+$ cd cli-weather/cli_weather
+$ python main.py -h
+```
+2. Make changes and test
+3. Submit Pull Request with comprehensive description of changes
+
 ## License
 
 ![License](https://img.shields.io/badge/%20licence-%20GNU%20V3.0-yellow)
 
-- **[GNU License](https://img.shields.io/badge/%20licence-%20GNU%20V3.0-yellow)**
 - Copyright 2020 © <a href="https://github.com/vatsa287/cli-weather/blob/master/LICENSE" target="_blank">General Public Licence v3.0</a>.
+
+cli-weather is made available under **[GNU License](https://img.shields.io/badge/%20licence-%20GNU%20V3.0-yellow)**
 
 ## Reaching Out
 
@@ -217,9 +242,3 @@ alt="Buy Me A Coffee" width="150" height="30" >
 </a>
 
 Thanks! :heart:
-
----
-
-Contributions are welcomed! <3
-
-Made with :heart: and Python.
