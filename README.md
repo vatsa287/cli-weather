@@ -72,14 +72,11 @@
 ```bash
 $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/postal_code
 ```
-
-                 Detailed weather data of Bengaluru, by city-name
+> Example : Detailed weather data and brief airquality data with input mode as city_name and postal_code respectively.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/vatsa287/cli-weather/master/assets/city-detailed.svg?raw=true">
 </p>
-
-                 Basic airquality data at New York City, by postalcode
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/vatsa287/cli-weather/master/assets/postalcode-airquality.svg?raw=true">
@@ -116,7 +113,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
 --- 
 
 + ## Gallery of Examples
-  - This
+
   - Get current weather. Displays current temprature
   ```
   $ cli-weather city bengaluru
@@ -179,29 +176,9 @@ $ cli-weather city singapore -u F
 
 ## Version History
 
-![PyPI](https://img.shields.io/pypi/v/cli-weather?color=blue&label=PyPI&logo=python&logoColor=yellow&style=plastic)
+Latest : ![PyPI](https://img.shields.io/pypi/v/cli-weather?color=blue&label=PyPI&logo=python&logoColor=yellow&style=plastic)
 
-[4 - Beta Limited Use Release](https://github.com/vatsa287/cli-weather/assets/version_history.md)
-
-![PyPI](https://img.shields.io/badge/PyPI-v0.1.4-blue?style=plastic&logo=python&logoColor=yellow)
-
-[3 - Alpha Test Release](https://github.com/vatsa287/cli-weather/assets/version_history.md)
-
-![PyPI](https://img.shields.io/badge/PyPI-v0.1.3-blue?style=plastic&logo=python&logoColor=yellow)
-
-[3 - Alpha Test Release](https://github.com/vatsa287/cli-weather/assets/version_history.md)
-
-![PyPI](https://img.shields.io/badge/PyPI-v0.1.2-blue?style=plastic&logo=python&logoColor=yellow)
-
-[3 - Alpha Test Release](https://github.com/vatsa287/cli-weather/assets/version_history.md)
-
-![PyPI](https://img.shields.io/badge/PyPI-v0.1.1-blue?style=plastic&logo=python&logoColor=yellow)
-
-[3 - Alpha Test Release](https://github.com/vatsa287/cli-weather/assets/version_history.md)
-
-![PyPI](https://img.shields.io/badge/PyPI-v0.1.0-blue?style=plastic&logo=python&logoColor=yellow)
-
-[3 - Alpha Test Release](https://github.com/vatsa287/cli-weather/assets/version_history.md)
+Description of all versions is present [here](https://github.com/vatsa287/cli-weather/blob/master/assets/version_history.md)
 
 ---
 
