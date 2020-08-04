@@ -7,6 +7,10 @@
 
 ---
 
+![PyPI - Status](https://img.shields.io/pypi/status/cli-weather?color=green&style=plastic)  ![PyPI - Wheel](https://img.shields.io/pypi/wheel/cli-weather?color=green&style=plastic)  ![GitHub issues](https://img.shields.io/github/issues/vatsa287/cli-weather?color=green&style=plastic)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vatsa287/cli-weather?color=green&style=plastic)
+
+---
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -25,7 +29,6 @@
 - [License](#license)
 - [Reaching Out](#reaching-out)
 - [Support The Project :sparkling_heart:](#support-the-project-sparkling_heart)
-
 
 ---
 
