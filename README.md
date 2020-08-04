@@ -1,4 +1,30 @@
-# cli-weather
+[![BuiltWithPython](https://img.shields.io/badge/Built%20With%20-Python-orange?style=for-the-badge&logo=python&logoColor=green)](https://img.shields.io/badge/Built%20With%20-Python-orange?style=for-the-badge&logo=python?logoColor=green)
+# cli-weather  [![Downloads](https://pepy.tech/badge/cli-weather)](https://pepy.tech/project/cli-weather)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vatsa287/cli-weather/master/assets/showhelp2.svg?raw=true">
+</p>
+
+---
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+  - [Local Installation](#try-without-using-pip)  <!-- [Features at a Glance](#features-at-a-glance) -->
+- [Usage](#usage)
+- [Examples](#examples)
+- [Data Sources](#data-sources)
+- [Dependencies](#dependencies)
+- [Version History](#version-history)
+- [License](#license)
+- [Reaching Out](#reaching-out)
+- [Support The Project :sparkling_heart:](#support-the-project-sparkling_heart)
+
+---
+
+
+## Introduction
 
 **cli-weather** is a command line app to get instant real-time weather data by city name or postalcode from any corner on earth right on the command line.
 Written in python and powered by **WeatherBIT API**, cli-weather also provides detailed weather data, air-quality data and forecasts for next 7 days with 24 hour intervals for weather and 3 days forecast with 12 hour intervals for air-quality.
@@ -11,15 +37,28 @@ You can look up weather data by many methods including:
 
 ## Installation
 
+
+> cli-weather requires [pip](pip.pypa.io) python package manager to install.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vatsa287/cli-weather/master/assets/install-still-format.svg?raw=true">
+</p>
+
+### Try without using pip
+
 ```
-pip install cli-weather
+Fork this repository
+$ git clone "https://github.com/username/cli-weather"
+$ cd cli_weather
+$ pip install requests
+$ python main.py [command] [options]
+
 ```
 
 ## Usage
 
-> cli-weather requires [pip](pip.pypa.io) python package manager to install.
-```
-cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] [-f] city_name/postal_code
+```bash
+$ cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] [-f] city_name/postal_code
 ```
 
 |Command         | Description                   |
@@ -36,7 +75,7 @@ cli-weather command [-h] [-c COUNTRY] [-a] [-u UNITS] [-d] [-f] city_name/postal
 |-d, --detailed  | Display detailed weather data |
 |-h, --help      | Show this message and exit    |
 
-## Example
+## Examples
 
 - Get current weather. Displays current temprature
 ```
@@ -90,16 +129,6 @@ $ cli-weather city singapore -u F
 
 * [requests](http://docs.python-requests.org/en/latest/) >= 2.4
 
-## Try without using pip
-
-```
-Fork this repository
-$ git clone "https://github.com/username/cli-weather"
-$ cd cli_weather
-$ pip install requests
-$ python main.py [command] [options]
-
-```
 
 ## Version History
 
@@ -171,7 +200,7 @@ $ python main.py [command] [options]
 <hr>
 
 
-## Support the project :sparkling_heart:
+## Support The Project :sparkling_heart:
 
 I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously,
 this takes time. You can use this service for free.
