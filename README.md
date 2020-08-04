@@ -72,6 +72,19 @@
 $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/postal_code
 ```
 
+                 Detailed weather data of Bengaluru, by city-name
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vatsa287/cli-weather/master/assets/city-detailed.svg?raw=true">
+</p>
+
+                 Basic airquality data at New York City, by postalcode
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vatsa287/cli-weather/master/assets/postalcode-airquality.svg?raw=true">
+</p>
+
+
 + ### Features at a glance
  
   + Positional and Optional arguments: v0.1.5 supports two modes of input and 5 options giving numerous cominations.
