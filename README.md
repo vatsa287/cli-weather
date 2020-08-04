@@ -72,7 +72,8 @@
 ```bash
 $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/postal_code
 ```
-> Example : Detailed weather data and brief airquality data with input mode as city_name and postal_code respectively.
+
+> Example : `Detailed weather data` and `Brief airquality data` with input mode as city_name and postal_code respectively.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/vatsa287/cli-weather/master/assets/city-detailed.svg?raw=true">
@@ -178,7 +179,7 @@ $ cli-weather city singapore -u F
 
 Latest : ![PyPI](https://img.shields.io/pypi/v/cli-weather?color=blue&label=PyPI&logo=python&logoColor=yellow&style=plastic)
 
-Description of all versions is present [here](https://github.com/vatsa287/cli-weather/blob/master/assets/version_history.md)
+Description of all versions is present [here](https://github.com/vatsa287/cli-weather/blob/master/assets/version_history.md).
 
 ---
 
