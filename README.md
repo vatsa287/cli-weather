@@ -118,7 +118,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
 
 + ## Gallery of Examples
 
-  Check [manual](https://github.com/vatsa287/cli-weather/blob/master/manual.md) for comprehensive demo of all possible options with examples.
+  Check [manual](https://github.com/vatsa287/cli-weather/blob/master/assets/manual.md) for comprehensive demo of all possible options with examples.
 
 --- 
 
