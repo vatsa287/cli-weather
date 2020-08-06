@@ -7,7 +7,7 @@
 
 ---
 
-![PyPI - Status](https://img.shields.io/pypi/status/cli-weather?color=green&style=plastic)  ![PyPI - Wheel](https://img.shields.io/pypi/wheel/cli-weather?color=green&style=plastic)  ![GitHub issues](https://img.shields.io/github/issues/vatsa287/cli-weather?color=green&style=plastic)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vatsa287/cli-weather?color=green&style=plastic)
+![PyPI - Status](https://img.shields.io/pypi/status/cli-weather?color=green&style=plastic&logo=pypi&logoColor=white)  ![PyPI - Wheel](https://img.shields.io/pypi/wheel/cli-weather?color=green&style=plastic&logo=pypi&logoColor=white)  ![GitHub issues](https://img.shields.io/github/issues/vatsa287/cli-weather?color=green&style=plastic&logo=github&logoColor=white)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vatsa287/cli-weather?color=green&style=plastic&logo=github&logoColor=white)  ![Docker Pulls](https://img.shields.io/docker/pulls/vatsa287/cli-weather?color=green&logoColor=white&style=plastic&logo=docker)
 
 ---
 
@@ -15,8 +15,9 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-  - [Local Installation](#local-installation)  <!-- [Features at a Glance](#features-at-a-glance) -->
+  - [Local Installation](#local-installation)
   - [Tarball and Wheel Installation](#tarball-and-wheel-installation)
+  - [Docker Container](#docker-container)
 - [Basic Usage](#basic-usage)
   - [Features at a glance](#features-at-a-glance)
   - [Gallery of Examples](#gallery-of-examples)
@@ -44,7 +45,7 @@
 > - By entering city_name
 > - By entering postal_code
 
---- 
+---
 
 ## Installation
 
@@ -70,6 +71,29 @@
   + Wheel
     - Download wheel file present in binary format with .whl extension from Releases tab and extract to continue with [Local Installation](#local-installation)
 
++ ### Docker Container
+  > Containerized version of cli-weather is present in `DockerHub` at https://hub.docker.com/r/vatsa287/cli-weather. Steps to use cli-weather in a container
+  + Pull Image
+    - Latest containerized version tag is 1.0
+      ```bash
+      $ docker pull vatsa287/cli-weather:1.0
+      ```
+  + List Image
+    - Check to confirm right tag
+      ```bash
+      $ docker image ls
+      ```
+
+  + Run Container
+    - Run the container in interactive mode, also expose the terminal for input and --rm=true to save memory usage. Port mapping is optional.
+
+      ```bash
+      $ docker run -it --rm=true vatsa287/cli-weather:1.0
+      ```
+      Can continue further with [usage](#basic-usage).
+
+---
+
 ## Basic Usage
 
 ```bash
@@ -89,9 +113,9 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
 
 
 + ### Features at a glance
- 
+
   + Positional and Optional arguments: v0.1.5 supports two modes of input and 5 options giving numerous cominations.
-    
+
     |Command             | Description                   |
     |--------------------|-------------------------------|
     |city                | Get weather by city name      |
@@ -105,22 +129,22 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
     |-u, --units     | Metric, Scientific, Farenheit |
     |-d, --detailed  | Display detailed weather data |
     |-h, --help      | Show this message and exit    |
-  
+
   + Supported Units: v0.1.5 supports Metric,Scientific and Farenheit indices.
-    
+
     |Units           | Extensions                    |
     |----------------|-------------------------------|
     |M               | Celcius, m/s, mm              |
     |S               | Kelvin, m/s, mm               |
     |F               | F, mph, in                    |
 
---- 
+---
 
 + ## Gallery of Examples
 
   Check [manual](https://github.com/vatsa287/cli-weather/blob/master/assets/manual.md) for comprehensive demo of all possible options with examples.
 
---- 
+---
 
 ## Data sources
 
