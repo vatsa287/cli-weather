@@ -118,7 +118,7 @@ def city_parse(args):
         get_airquality_forecast(main_data)
         return
 
-    # call arguments based on selected combination of optional arguments
+    # call respective methods based on selected combination of optional arguments in cli-weather
     if args.detailed is False and args.airquality is False:
         get_basic_temparature(main_data, degree)
 
