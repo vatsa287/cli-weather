@@ -2,7 +2,7 @@ from __future__ import print_function
 import requests
 import argparse
 
-# handle ModuleNotFoundError python3 execution
+# handle ModuleNotFoundError during python3 execution
 try:
     from cli_weather.airquality_data import *
     from cli_weather.weather_data import *
@@ -15,6 +15,9 @@ except ModuleNotFoundError:
     from airquality_forecast_data import *
 
 def get_by_city_args(subparsers):
+    """
+    add arguments to argparser
+    """
     city_parser = subparsers.add_parser('city',
         formatter_class=argparse.RawTextHelpFormatter
     )
@@ -51,6 +54,10 @@ def get_by_city_args(subparsers):
 
 
 def city_parse(args):
+    """
+    Send API request to WeatherBIT for city based input 
+    and call respective methods based on optional arguments
+    """
     city = args.city
     country = "&" + args.country
     units = args.units
