@@ -50,6 +50,10 @@ def get_by_postalcode_args(subparsers):
     )
 
 def postalcode_parse(args):
+    """
+    Send API request to WeatherBIT for city based input 
+    and call respective methods based on optional arguments
+    """
     postalcode = args.postalcode
     country = "&" + args.country
     units = args.units
