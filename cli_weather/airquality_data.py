@@ -1,6 +1,11 @@
-from __future__ import print_function
+﻿from __future__ import print_function
 
 def calculate_aqi_category(aqi):
+    """
+    Get the aqi from JSON data of WeatherBIT
+    and return the category for which the 
+    aqi belongs to
+    """
     if aqi <= 50:
         return "GOOD"
     elif aqi > 50 and aqi <= 100:
