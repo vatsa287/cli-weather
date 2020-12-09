@@ -16,7 +16,7 @@ except ModuleNotFoundError:
 
 def get_by_city_args(subparsers):
     """
-    add arguments to argparser
+    add positinal argument 'city' to argparser
     """
     city_parser = subparsers.add_parser('city',
         formatter_class=argparse.RawTextHelpFormatter
