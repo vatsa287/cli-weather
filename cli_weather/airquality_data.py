@@ -20,6 +20,10 @@ def calculate_aqi_category(aqi):
         return "SEVERE"
 
 def get_aqi_risk_status(aqi_category):
+    """
+    Return health risk status based on to
+    which category does air-quality index falls.
+    """
     if aqi_category == "GOOD":
         return "There is little or no health risk associated with air quality"
     elif aqi_category == "SATISFACTORY":
