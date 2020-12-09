@@ -38,6 +38,11 @@ def get_aqi_risk_status(aqi_category):
         return "Considered hazardous and it's likely causes are accidental nuclear spill or harmful gases. Evacuate immediately gas suits are recommended.\nLikely that emergency is declared in this area."
 
 def get_basic_airquality(main_data):
+    """
+    Get AQI as JSON input from WeatherBIT API and return
+    AQI, which category does it belong to and also associated 
+    health risk
+    """
     data = main_data['data']
     aqi = data[0]['aqi']
     aqi_category = calculate_aqi_category(aqi)
