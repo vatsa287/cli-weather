@@ -52,6 +52,11 @@ def get_basic_airquality(main_data):
     print(aqi_risk_status)
 
 def get_detailed_airquality(main_data):
+    """
+    Get AQI data as JSON input from WeatherBIT API
+    and returns detailed air-quality data by printing 
+    on the terminal
+    """
     data = main_data['data']
     aqi = data[0]['aqi']
     aqi_category = calculate_aqi_category(aqi)
