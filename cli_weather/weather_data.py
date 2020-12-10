@@ -1,6 +1,9 @@
 from __future__ import print_function
 
 def get_basic_temparature(main_data, degree):
+    """
+    Print basic temperature data on the terminal
+    """
     data = main_data['data']
     city = data[0]['city_name']
     print("Current temparature in {} is {} {}" .format(city.capitalize(), data[0]['temp'], degree))
