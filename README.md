@@ -1,4 +1,4 @@
-[![BuiltWithPython](https://img.shields.io/badge/Built%20With%20-Python-orange?style=for-the-badge&logo=python&logoColor=green)](https://img.shields.io/badge/Built%20With%20-Python-orange?style=for-the-badge&logo=python?logoColor=green)
+﻿[![BuiltWithPython](https://img.shields.io/badge/Built%20With%20-Python-orange?style=for-the-badge&logo=python&logoColor=green)](https://img.shields.io/badge/Built%20With%20-Python-orange?style=for-the-badge&logo=python?logoColor=green)
 # cli-weather  [![Downloads](https://pepy.tech/badge/cli-weather)](https://pepy.tech/project/cli-weather)
 
 <p align="center">
@@ -142,7 +142,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
 
 + ## Gallery of Examples
 
-  Check [manual](https://github.com/vatsa287/cli-weather/blob/master/assets/manual.md) for comprehensive demo of all possible options with examples.
+  Check [manual](https://github.com/vatsa287/cli-weather/blob/master/docs/manual.md) for comprehensive demo of all possible options with examples.
 
 ---
 
@@ -164,7 +164,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
 
 Latest : ![PyPI](https://img.shields.io/pypi/v/cli-weather?color=blue&label=PyPI&logo=python&logoColor=yellow&style=plastic)
 
-Description of all versions is present [here](https://github.com/vatsa287/cli-weather/blob/master/assets/version_history.md).
+Description of all versions is present [here](https://github.com/vatsa287/cli-weather/blob/master/docs/version_history.md).
 
 ---
 
