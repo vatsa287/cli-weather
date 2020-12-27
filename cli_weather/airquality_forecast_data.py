@@ -1,4 +1,4 @@
-from __future__ import print_function
+﻿from __future__ import print_function
 from datetime import datetime
 
 def timestamp_to_datetime(timestamp):
@@ -14,6 +14,10 @@ def timestamp_to_datetime(timestamp):
 
 # return time in string format
 def timestamp_to_strftime(timestamp):
+    """
+    Convert time in timestamp format 
+    to string format
+    """
     date_object = datetime.fromtimestamp(timestamp)
     date = date_object.strftime("%d %B, %Y")
     return(date)
