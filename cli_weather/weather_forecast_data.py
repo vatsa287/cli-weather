@@ -2,6 +2,10 @@ from __future__ import print_function
 from datetime import datetime
 
 def timestamp_to_datetime(timestamp):
+    """
+    Convert the date object from timestamp format
+    to date-time format
+    """
     date_object = datetime.fromtimestamp(timestamp)
     date = str(date_object)
     date = date.split(" ")
