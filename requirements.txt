@@ -4,3 +4,5 @@ requests
 json
 k8s-sig
 pytho3
+docker
+kubernetes
