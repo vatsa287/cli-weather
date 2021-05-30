@@ -18,7 +18,7 @@ def main():
     parser.add_argument(
         "--version",
         action="version",
-        version='%(prog)s 0.1.5'
+        version='%(prog)s 0.1.9'
     )
     # description of project, supress default help
     parser.add_argument(
