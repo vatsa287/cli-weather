@@ -97,7 +97,7 @@ def postalcode_parse(args):
     # ValueError-unable to decode json, UnboundLocalError-used var before declaring
     except (ValueError,UnboundLocalError) as err:
         print("Invalid postal-code")
-        print("Please use format ex: $ cli-weather postalcode 560032 [-c country_name][-a][-u M/S/F][-d]")
+        print("Please use format ex: $ cli-weather postalcode 560032 [-c country_name][-a][-u M/S/I][-d]")
         return
 
     # defalut metric values

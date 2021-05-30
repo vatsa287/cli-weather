@@ -13,23 +13,20 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-  - [Local Installation](#local-installation)
-  - [Tarball and Wheel Installation](#tarball-and-wheel-installation)
-  - [Docker Container](#docker-container)
-- [Basic Usage](#basic-usage)
-  - [Features at a glance](#features-at-a-glance)
-  - [Gallery of Examples](#gallery-of-examples)
-- [Data Sources](#data-sources)
-- [Dependencies](#dependencies)
-- [Version History](#version-history)
-- [How to Contribute](#how-to-contribute)
-  - [Bug Reports & Feature Requests](#bug-reports-and-feature-requests)
-  - [Developing](#developing)
-- [License](#license)
-- [Reaching Out](#reaching-out)
-- [Support The Project :sparkling_heart:](#support-the-project-sparkling_heart)
+- [cli-weather  ![Downloads](https://pepy.tech/project/cli-weather)](#cli-weather--)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Installation](#installation)
+  - [Basic Usage](#basic-usage)
+  - [Data sources](#data-sources)
+  - [Dependencies](#dependencies)
+  - [Version History](#version-history)
+  - [How to Contribute](#how-to-contribute)
+      - [Bug Reports and Feature Requests](#bug-reports-and-feature-requests)
+      - [Developing](#developing)
+  - [License](#license)
+  - [Reaching Out](#reaching-out)
+  - [Support The Project :sparkling_heart:](#support-the-project-sparkling_heart)
 
 ---
 
@@ -96,8 +93,10 @@
 
 ## Basic Usage
 
+> Note: Airquality information will not be available from version v1.0.0 since source API is now premium.
+
 ```bash
-$ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/postal_code
+$ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,I}] city_nmae/postal_code
 ```
 
 > Example : `Detailed weather data` and `Brief airquality data` with input mode as city_name and postal_code respectively.
@@ -114,7 +113,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
 
 + ### Features at a glance
 
-  + Positional and Optional arguments: v0.1.5 supports two modes of input and 5 options giving numerous cominations.
+  + Positional and Optional arguments: v0.1.9 supports two modes of input and 5 options giving numerous cominations.
 
     |Command             | Description                   |
     |--------------------|-------------------------------|
@@ -126,7 +125,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
     |-a, --airquality| Display current air quality   |
     |-f, --forecast  | Forecast on weather/airquality|
     |-c, --country   | Country of entered area       |
-    |-u, --units     | Metric, Scientific, Farenheit |
+    |-u, --units     | Metric, Scientific, Imperial  |
     |-d, --detailed  | Display detailed weather data |
     |-h, --help      | Show this message and exit    |
 
@@ -136,7 +135,7 @@ $ cli-weather command [-h] [-a] [-d] [-f] [-c COUNTRY] [-u {M,S,F}] city_nmae/po
     |----------------|-------------------------------|
     |M               | Celcius, m/s, mm              |
     |S               | Kelvin, m/s, mm               |
-    |F               | F, mph, in                    |
+    |I               | F, mph, in                    |
 
 ---
 
