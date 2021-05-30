@@ -47,15 +47,15 @@ def get_by_city_args(subparsers):
     )
     city_parser.add_argument(
         "-u", "--units",
-        choices=['M','S','F'],
-        help="M - Metric (Celcius, m/s, mm) [DEFAULT]\nS - Scientific (Kelvin, m/s, mm)\nI - Fahrenheit (F, mph, in)",
+        choices=['M','S','I'],
+        help="M - Metric (Celcius, m/s, mm) [DEFAULT]\nS - Scientific (Kelvin, m/s, mm)\nI - Imperial (F, mph, in)",
         default="M"
     )
 
 
 def city_parse(args):
     """
-    Send API request to WeatherBIT for city based input 
+    Send API request to WeatherBIT for city based input
     and call respective methods based on optional arguments
     """
     city = args.city
@@ -112,7 +112,7 @@ def city_parse(args):
 
     if args.units == "S":
         degree = "kelvin"
-    elif args.units == "F":
+    elif args.units == "I":
         degree = "Fahrenheit"
         speed = "mph"
         distance = "in"
