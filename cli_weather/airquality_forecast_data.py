@@ -39,7 +39,8 @@ def calculate_aqi_category(aqi):
     elif aqi > 400 and aqi <= 500:
         return "SEVERE"
 
-def get_airquality_forecast(main_data):
+def get_airquality_forecast(main_data): #Returns air quality from forecast data
+    """ Display airquality forecast data to terminal """   
     # start with day day hour day, skip 12 hours for every iteration
     day = 0
     data = main_data['data']
