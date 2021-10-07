@@ -22,10 +22,10 @@ def timestamp_to_strftime(timestamp):
     date = date_object.strftime("%d %B, %Y")
     return(date)
 
-"""
-    Calculate aqi category from given aqi
-"""
 def calculate_aqi_category(aqi):
+    """
+    Calculate aqi category from given aqi
+    """
     if aqi <= 50:
         return "GOOD"
     elif aqi > 50 and aqi <= 100:
