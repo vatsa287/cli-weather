@@ -177,7 +177,7 @@ Please use the [issue tracker](https://github.com/vatsa287/cli-weather/issues) t
 
 PRs are welcome. To begin developing, do this:
 
-1. Clone repo and create a new branch: `$ git checkout https://github.com/alichtman/stronghold -b name_for_new_branch`.
+1. Clone repo and create a new branch:
 
 ```bash
 $ git clone "https://github.com/vatsa287/cli-weather"
